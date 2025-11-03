@@ -1,8 +1,9 @@
 package VRS;
 
 public class PremiumCustomer extends Customer {
+
     public PremiumCustomer(String customerId, String name) {
-        super(customerId, name);
+        super(customerId, name, "Premium"); // Added customerType
     }
 
     @Override
