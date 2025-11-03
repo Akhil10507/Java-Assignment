@@ -68,10 +68,11 @@ public class VehicleRentalSystem {
         System.out.print("Premium Customer? (y/n): ");
         char type = sc.next().charAt(0);
 
-        if (type == 'y' || type == 'Y')
+        if (type == 'y' || type == 'Y') {
             customers.add(new PremiumCustomer(id, name));
-        else
-            customers.add(new Customer(id, name));
+        } else {
+            customers.add(new Customer(id, name, "Normal"));
+        }
 
         System.out.println("Customer added successfully!");
     }
@@ -145,3 +146,4 @@ public class VehicleRentalSystem {
         return null;
     }
 }
+
